@@ -1,0 +1,6 @@
+import yfinance as yf
+stock_symbol = 'MSFT'
+ticker = yf.Ticker(stock_symbol)
+stock_info = ticker.info
+for key, value in stock_info.items():
+    print(f"{key}: {value}")
